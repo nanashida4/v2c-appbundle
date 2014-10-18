@@ -37,7 +37,7 @@ appbundler でリビルドしてみました。
 
 ## 注意
 
-リビルド時、[Oracle JDK 7uXX のバージョン指定を行っています](/build.sh#L4)。
+リビルド時、[Oracle JDK 7uXX のバージョン指定を行っています](/build.sh#L6)。
 
 そのため、Oracle JRE 8uXX をインストールしていても、V2C 自体は JRE 7uXX の固定バージョンの VM で起動します。
 
