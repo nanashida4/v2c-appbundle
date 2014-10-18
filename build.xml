@@ -5,6 +5,8 @@
   <property name="v2c.archive.name" value="V2C_${v2c.version}_Mac" />
   <property name="v2c.archive.bundleapp.name" value="${v2c.archive.name}_appbundler" />
 
+  <property environment="env" />
+
   <taskdef name="bundleapp"
     classname="com.oracle.appbundler.AppBundlerTask"
     classpath="lib/appbundler-1.0.jar" />
@@ -27,6 +29,7 @@
       shortversion="${v2c.version}"
       icon="tmp/V2C.app/Contents/Resources/V2C.icns"
       >
+      <runtime dir="${env.JAVA_HOME}" />
       <classpath file="tmp/V2C.app/Contents/Resources/Java/*.jar" />
     </bundleapp>
   </target>
