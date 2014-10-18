@@ -56,10 +56,10 @@ Oracle JRE が新たにリリースされたら、なるべく早く更新する
 
 ## 更新履歴
 
-### 2014/10/19 [v2.11.4 appbuilder2-jdk7u71](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler2_jdk7u71)
+### 2014/10/19 [v2.11.4 appbundler2-jdk7u71](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler2_jdk7u71)
 
 * Oracle JDK 7u67でリビルドし、Rhino のエラーを解消
 
-### 2014/10/18 [v2.11.4 appbuilder1](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler1)
+### 2014/10/18 [v2.11.4 appbundler1](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler1)
 
 * 初版作成
