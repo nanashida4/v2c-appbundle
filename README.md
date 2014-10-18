@@ -64,7 +64,7 @@ Oracle JRE が新たにリリースされたら、なるべく早く更新する
 
 * アーカイブ作成に失敗していたのを修正
 * `V2C.app` を自己署名するように修正
-* Oracle JDK 7u67でリビルドし、Oracle JRE 8 の環境で Rhino のエラーが発生するのを修正
+* Oracle JDK 7u71でリビルドし、Oracle JRE 8 の環境で Rhino のエラーが発生するのを修正
 
 ### 2014/10/18 [v2.11.4 appbundler1](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler1)
 
