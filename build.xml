@@ -36,7 +36,7 @@
   </target>
 
   <target name="archive" depends="bundle">
-    <tar destfile="dist/${v2c.appbunder.archive.name}.tar.gz" basedir="dist" includes="V2C.app" compression="gzip" />
+    <tar destfile="dist/${v2c.appbunder.archive.name}.tar.gz" basedir="dist" includes="V2C.app/**" compression="gzip" longfile="gnu" />
   </target>
 
 </project>
