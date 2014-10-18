@@ -20,7 +20,7 @@ Oracle JRE で起動すると使える状態にはなるので、 appbundler で
 
 ## ダウンロード
 
-[リリース](/releases) からダウンロードしてください
+[リリース](https://github.com/nanashida4/v2c-appbundler/releases) からダウンロードしてください
 
 ## 既知の問題
 
