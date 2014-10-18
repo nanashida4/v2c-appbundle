@@ -35,6 +35,7 @@
     </bundleapp>
 
     <exec executable="codesign">
+      <arg value="--deep" />
       <arg value="-s" />
       <arg value="nanashida4" />
       <arg value="dist/V2C.app" />
