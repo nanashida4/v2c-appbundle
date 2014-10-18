@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="V2C" default="bundle-V2C" basedir=".">
+
+  <taskdef name="bundleapp"
+    classname="com.oracle.appbundler.AppBundlerTask"
+    classpath="lib/appbundler-1.0.jar" />
+
+  <target name="-prepare">
+    <delete dir="tmp" />
+    <mkdir dir="tmp" />
+    <gunzip src="files/V2C_2.11.4_Mac.tar.gz" dest="tmp/V2C_2.11.4_Mac.tar" /> 
+    <untar src="tmp/V2C_2.11.4_Mac.tar" dest="tmp" /> 
+    <delete dir="dist" />
+    <mkdir dir="dist" />
+  </target>
+
+  <target name="bundle-V2C" depends="-prepare">
+    <bundleapp outputdirectory="dist"
+      name="V2C"
+      displayname="V2C"
+      identifier="V2C"
+      mainclassname="V2C"
+      shortversion="2.11.4"
+      icon="tmp/V2C.app/Contents/Resources/V2C.icns"
+      >
+      <classpath file="tmp/V2C.app/Contents/Resources/Java/V2C_R20131210.jar" />
+    </bundleapp>
+  </target>
+
+</project>
