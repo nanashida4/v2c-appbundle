@@ -2,8 +2,9 @@
 <project name="V2C" default="bundle" basedir=".">
 
   <property name="v2c.version" value="2.11.4" />
+  <property name="v2c.appbunder.version" value="appbundler2_jdk7u71" />
   <property name="v2c.archive.name" value="V2C_${v2c.version}_Mac" />
-  <property name="v2c.archive.bundleapp.name" value="${v2c.archive.name}_appbundler" />
+  <property name="v2c.appbunder.archive.name" value="${v2c.archive.name}_${v2c.appbunder.version}" />
 
   <property environment="env" />
 
@@ -35,7 +36,7 @@
   </target>
 
   <target name="archive" depends="bundle">
-    <tar destfile="dist/${v2c.archive.bundleapp.name}.tar.gz" basedir="dist" includes="V2C.app" compression="gzip" />
+    <tar destfile="dist/${v2c.appbunder.archive.name}.tar.gz" basedir="dist" includes="V2C.app" compression="gzip" />
   </target>
 
 </project>
