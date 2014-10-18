@@ -3,7 +3,7 @@
 
   <property name="v2c.version" value="2.11.4" />
   <property name="v2c.archive.name" value="V2C_${v2c.version}_Mac" />
-  <property name="v2c.archive.bundleapp.name" value="${v2c.archive.name}_bundleapp" />
+  <property name="v2c.archive.bundleapp.name" value="${v2c.archive.name}_appbundler" />
 
   <taskdef name="bundleapp"
     classname="com.oracle.appbundler.AppBundlerTask"
