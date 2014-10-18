@@ -54,6 +54,10 @@ Oracle JRE が新たにリリースされたら、なるべく早く更新する
 
 [リリース](https://github.com/nanashida4/v2c-appbundler/releases) から最新版をダウンロードしてください
 
+**自己署名を利用しています。自己責任にてご利用ください。**
+アプリケーションを起動するためには、 [OS X：Gatekeeper について](http://support.apple.com/kb/ht5290?viewlocale=ja_JP) に記載されている手順で、「すべてのアプリケーションを許可」する必要があります。
+
+
 ## 更新履歴
 
 ### 2014/10/19 [v2.11.4 appbundler2-jdk7u71](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler2_jdk7u71)
