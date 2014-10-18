@@ -35,18 +35,31 @@ Matching Java Virtual Machines (4):
 Java 6 は今後セキュリティアップデートされないことを考えると Oracle JRE を使うことが望ましいということもあり、
 appbundler でリビルドしてみました。
 
+## 注意
+
+リビルド時、[Oracle JDK 7uXX のバージョン指定を行っています](/build.sh#L4)。
+
+そのため、Oracle JRE 8uXX をインストールしていても、V2C 自体は JRE 7uXX の固定バージョンの VM で起動します。
+
+ゆえに、Oracle JRE のセキュリティアップデートを行っても、appbundler 版 V2C をリビルドしなければ、
+V2C 自体は脆弱なバージョンの VM で起動することに留意してください。
+
+Oracle JRE が新たにリリースされたら、なるべく早く更新するようにはしようと思います。
+
 ## 必要なもの
 
 * [Oralce JRE](http://java.com/ja/)
 
 ## ダウンロード
 
-[リリース](https://github.com/nanashida4/v2c-appbundler/releases) からダウンロードしてください
+[リリース](https://github.com/nanashida4/v2c-appbundler/releases) から最新版をダウンロードしてください
 
-## 既知の問題
+## 更新履歴
 
-### 1. ユーザスクリプトが使えない
+### 2014/10/18 [v2.11.4 appbuilder2-jdk7u71](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler2_jdk7u71)
 
-最新版 Oracle JRE 8 で起動すると Rhino でエラーが出てしまってユーザスクリプトが使えません。
+* Oracle JDK 7u67でリビルドし、Rhino のエラーを解消
 
-![スクリプトエラー画面](/img/yosemite-rhino-error.png)
+### 2014/10/18 [v2.11.4 appbuilder1](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler1)
+
+* 初版作成
