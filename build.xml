@@ -22,7 +22,7 @@
     <bundleapp outputdirectory="dist"
       name="V2C"
       displayname="V2C"
-      identifier="V2C"
+      identifier="org.monazilla.v2c"
       mainclassname="V2C"
       shortversion="${v2c.version}"
       icon="tmp/V2C.app/Contents/Resources/V2C.icns"
