@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="V2C" default="bundle-V2C" basedir=".">
+<project name="V2C" default="bundle" basedir=".">
 
   <property name="v2c.version" value="2.11.4" />
   <property name="v2c.archive.name" value="V2C_${v2c.version}_Mac" />
@@ -18,7 +18,7 @@
     <mkdir dir="dist" />
   </target>
 
-  <target name="bundle-V2C" depends="-prepare">
+  <target name="bundle" depends="-prepare">
     <bundleapp outputdirectory="dist"
       name="V2C"
       displayname="V2C"
@@ -31,7 +31,7 @@
     </bundleapp>
   </target>
 
-  <target name="archive-V2C" depends="bundle-V2C">
+  <target name="archive" depends="bundle">
     <tar destfile="dist/${v2c.archive.bundleapp.name}.tar.gz" basedir="dist" includes="V2C.app" compression="gzip" />
   </target>
 
