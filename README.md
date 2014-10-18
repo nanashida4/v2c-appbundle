@@ -1,4 +1,4 @@
-appbundle 版 V2C
+appbundler 版 V2C
 ======================
 
 ## 説明
@@ -13,6 +13,14 @@ Yosemite 上で V2C.app を起動すると、以下のようなエラー画面�
 
 
 Oracle JRE で起動すると使える状態にはなるので、 appbundler でリビルドしてみました。
+
+## 必要なもの
+
+* [Oralce JRE](http://java.com/ja/)
+
+## ダウンロード
+
+[リリース](/releases) からダウンロードしてください
 
 ## 既知の問題
 
