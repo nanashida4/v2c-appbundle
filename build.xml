@@ -43,7 +43,15 @@
   </target>
 
   <target name="archive" depends="bundle">
-    <tar destfile="dist/${v2c.appbunder.archive.name}.tar.gz" basedir="dist" includes="V2C.app/**" compression="gzip" longfile="gnu" />
+    <exec executable="ditto" dir="dist">
+      <arg value="-c" />
+      <arg value="-k" />
+      <arg value="--sequesterRsrc" />
+      <arg value="--keepParent" />
+      <arg value="--keepParent" />
+      <arg value="V2C.app" />
+      <arg value="${v2c.appbunder.archive.name}.zip" />
+    </exec>
   </target>
 
 </project>
