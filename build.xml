@@ -33,6 +33,12 @@
       <runtime dir="${env.JAVA_HOME}" />
       <classpath file="tmp/V2C.app/Contents/Resources/Java/*.jar" />
     </bundleapp>
+
+    <exec executable="codesign">
+      <arg value="-s" />
+      <arg value="nanashida4" />
+      <arg value="dist/V2C.app" />
+    </exec>
   </target>
 
   <target name="archive" depends="bundle">
