@@ -58,6 +58,7 @@ appbundler でリビルドしてみました。
     * Rhino は [github.com/mozilla/rhino](https://github.com/mozilla/rhino/commit/013a3ef676ab9424fc2229a33026b085e069b2cb) でビルド
     * JSR-223 スクリプトエンジンは [Using Rhino JSR-223 engine with JDK8](https://wiki.openjdk.java.net/display/Nashorn/Using+Rhino+JSR-223+engine+with+JDK8) の手順でビルド
 * JRE7u71 をバンドルしないようにし、クライアントマシンの最新版 Oracle JRE が利用されるようにした
+* `NSHighResolutionCapable` を `Info.plist` に追加し、 `true` にした
 
 ### 2014/10/19 [v2.11.4 appbundler2-jdk7u71](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler2_jdk7u71)
 
