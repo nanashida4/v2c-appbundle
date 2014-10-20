@@ -6,9 +6,11 @@ appbundler 版 V2C
 これは、 [Java+Swingによる2ch&Twitterブラウザ V2C](http://v2c.s50.xrea.com/) の Mac OSX 版を、
 [appbundler](https://java.net/projects/appbundler/downloads) でリビルドしたものです。
 
-OSX 10.10 Yosemite では、オリジナル版は [Java for OS X 2014-001](http://support.apple.com/kb/dl1572) でなければ動きません。
+Mac OS X では、オリジナル版は [Java for OS X 2014-001](http://support.apple.com/kb/dl1572) でなければ動きません。
 
-Java for OS X 2014-001 をインストールしていない場合、起動時に以下のメッセージが表示されます。
+これは、 [JarBundler](http://informagen.com/JarBundler/index.html) を使ってランチャーがビルドされているためです。
+
+オリジナル V2C を Java for OS X 2014-001 をインストールしていない環境で起動しようとすると、以下のメッセージが表示されます。
 
 ![JavaSE6が必要](/img/yosemite-startup-require-javase6.png)
 
@@ -35,17 +37,6 @@ Matching Java Virtual Machines (4):
 Java 6 は今後セキュリティアップデートされないことを考えると Oracle JRE を使うことが望ましいということもあり、
 appbundler でリビルドしてみました。
 
-## 注意
-
-リビルド時、[Oracle JDK 7uXX のバージョン指定を行っています](/build.sh#L6)。
-
-そのため、Oracle JRE 8uXX をインストールしていても、V2C 自体は JRE 7uXX の固定バージョンの VM で起動します。
-
-ゆえに、Oracle JRE のセキュリティアップデートを行っても、appbundler 版 V2C をリビルドしなければ、
-V2C 自体は脆弱なバージョンの VM で起動することに留意してください。
-
-Oracle JRE が新たにリリースされたら、なるべく早く更新するようにはしようと思います。
-
 ## 必要なもの
 
 * [Oralce JRE](http://java.com/ja/)
@@ -59,6 +50,14 @@ Oracle JRE が新たにリリースされたら、なるべく早く更新する
 
 
 ## 更新履歴
+
+### 2014/10/21 [v2.11.4 appbundler3](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler3)
+
+* Rhino 1.7R5pre をビルドした js.jar, JSR-223 スクリプトエンジンの js-engine.jar を追加し、
+  Oracle JRE 8 でユーザスクリプトが使えるようにした
+    * Rhino は [github.com/mozilla/rhino](https://github.com/mozilla/rhino/commit/013a3ef676ab9424fc2229a33026b085e069b2cb) でビルド
+    * JSR-223 スクリプトエンジンは [Using Rhino JSR-223 engine with JDK8](https://wiki.openjdk.java.net/display/Nashorn/Using+Rhino+JSR-223+engine+with+JDK8) の手順でビルド
+* JRE7u71 をバンドルしないようにし、クライアントマシンの最新版 Oracle JRE が利用されるようにした
 
 ### 2014/10/19 [v2.11.4 appbundler2-jdk7u71](https://github.com/nanashida4/v2c-appbundler/releases/tag/v2.11.4_appbundler2_jdk7u71)
 
