@@ -2,7 +2,7 @@
 <project name="V2C" default="bundle" basedir=".">
 
   <property name="v2c.version" value="2.11.4" />
-  <property name="v2c.appbunder.version" value="appbundler3" />
+  <property name="v2c.appbunder.version" value="appbundler4" />
   <property name="v2c.archive.name" value="V2C_${v2c.version}_Mac" />
   <property name="v2c.appbunder.archive.name" value="${v2c.archive.name}_${v2c.appbunder.version}" />
 
@@ -31,6 +31,8 @@
       <classpath file="tmp/V2C.app/Contents/Resources/Java/*.jar" />
       <classpath file="extlib/*.jar" />
     </bundleapp>
+
+    <copy file="files/Info.plist" tofile="dist/V2C.app/Contents/Info.plist" overwrite="true" />
 
     <exec executable="codesign">
       <arg value="--deep" />
